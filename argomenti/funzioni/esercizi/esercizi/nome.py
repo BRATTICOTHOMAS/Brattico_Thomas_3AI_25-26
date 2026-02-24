@@ -1,0 +1,7 @@
+nome= input("metti il tuo nome:")
+print(nome[-4:-1])
+print(nome[-6:-4])
+print(nome.replace("o","💻"))
+print(nome.replace("t", "🚂"))
+print(nome.replace("f", "🧹"))
+print(nome.replace("c", "📉"))
