@@ -10,9 +10,9 @@ def ricerca_dicotonica(l, n):
         m=(i+f)//2
         if l[m]==n:
             return True
-        if l[m] < n:
+        if l[m] > n:
             f=m
-        elif l[m] > n:
+        elif l[m] < n:
             i= m
     return False
 lista=[10,12,44,72,88,96,104,1000]
