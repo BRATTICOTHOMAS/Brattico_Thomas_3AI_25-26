@@ -6,9 +6,12 @@ import os
 import sys
 l=["a","e","i","o","u","A","E","I","O","U","ù","à","ò","è","é","ì"]
 print("Arguments: ", sys.argv)
-
+conta=0
 p=input("aggiungi un parametro: ")
-if os.path.isfile(".\\biblioteca\\ris2.txt") ==True:
+if os.path.isfile("..\\" + p) ==True:
     print("hai trovato un file")
+    for i in p:
+        if i in l:
+            conta+=1 
 else: 
     print("Non è un file") 
