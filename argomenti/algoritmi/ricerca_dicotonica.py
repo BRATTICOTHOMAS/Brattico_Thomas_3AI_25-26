@@ -11,9 +11,12 @@ def ricerca_dicotonica(l, n):
         if l[m]==n:
             return True
         if l[m] > n:
+            m=m-1 #è bastato aggiungere m=m-1 e m=m+1 per far si che il numero controllato venisse coinvolto nello step successivo
             f=m
-        elif l[m] < n:
+        elif l[m] <= n:
+            m=m+1
             i= m
+            
     return False
 lista=[10,12,44,72,88,96,104,1000]
-print(ricerca_dicotonica(lista,88))
+print(ricerca_dicotonica(lista,96))
