@@ -52,4 +52,4 @@ def main(page: ft.Page):
     page.theme_mode = ft.ThemeMode.SYSTEM
     page.add(view)
 
-ft.app(main)
+ft.run(main, view=ft.AppView.WEB_BROWSER)
